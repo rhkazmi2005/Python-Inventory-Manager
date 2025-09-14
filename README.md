@@ -112,19 +112,10 @@ This project was developed for CIS 1348 (Spring 2025) with the following constra
 - Object-oriented programming principles for Part 2
 - Custom sorting algorithms (no built-in sort functions)
 
-## Author
 
-**Reza Kazmi** - CIS 1348 Student
 
-## Course Information
-- **Course**: CIS 1348
-- **Semester**: Spring 2025
-- **Project**: Inventory Management System
 
-## Grade Information
-- Part 1: 95/100 (minor logic error in damaged item processing)
-- Part 2: Object-oriented implementation with interactive querying
 
----
 
-*This project demonstrates proficiency in Python programming, file I/O operations, data processing, object-oriented design, and algorithm implementation.*
+
+
