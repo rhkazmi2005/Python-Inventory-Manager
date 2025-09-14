@@ -1,0 +1,36 @@
+
+<html>
+<head>
+    <title>Grading Report</title>
+    <style>
+    body {
+        font-family: sans-serif;
+        margin: 20px;
+    }
+    table {
+        border-collapse: collapse;
+        width: auto;
+        max-width: 600px;
+    }
+    th, td {
+        border: 1px solid #999;
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+    th {
+        background-color: #eee;
+    }
+    td:last-child, th:last-child {
+        text-align: right;
+    }
+    </style>
+</head>
+<body>
+    <h2>Grading Report</h2>
+    <table>
+        <tr><th>Category</th><th>Score</th><th>Weight</th><th>Result</th></tr>
+        <tr><td>Script filename is correctly named part2.py or Part2.py</td><td>1.0</td><td>1.0</td><td>1.00</td></tr><tr><td>Collects input from the user (manufacturer and item type)</td><td>2.0</td><td>1.0</td><td>2.00</td></tr><tr><td>Once the results are displayed, prompts user for a new query</td><td>2.0</td><td>1.0</td><td>2.00</td></tr><tr><td>Uses dynamically generated item types for query</td><td>4.0</td><td>1.0</td><td>4.00</td></tr><tr><td>Program quits if user enters a special character or string such as 'q','quit','Q','exit' etc...</td><td>1.0</td><td>1.0</td><td>1.00</td></tr><tr><td>Prints 'no such item...' if manufacturer not found</td><td>4.0</td><td>1.0</td><td>4.00</td></tr><tr><td>Prints 'no such item...' if item type not found</td><td>4.0</td><td>1.0</td><td>4.00</td></tr><tr><td>Prints 'no such item...' if multiple manufacturers provided</td><td>2.0</td><td>1.0</td><td>2.00</td></tr><tr><td>Prints 'no such item...' if multiple item types provided</td><td>2.0</td><td>1.0</td><td>2.00</td></tr><tr><td>Prints 'no such item...' if combination of manufacturer and item type does not exist</td><td>1.0</td><td>1.0</td><td>1.00</td></tr><tr><td>Ignores words which are not manufacturers or item types in the database words in the input</td><td>4.0</td><td>0.0</td><td>0.00</td></tr><tr><td>If item is found, prints itemID</td><td>4.5</td><td>1.0</td><td>4.50</td></tr><tr><td>If item is found, prints manufacturer</td><td>0.5</td><td>1.0</td><td>0.50</td></tr><tr><td>If item is found, prints item type</td><td>0.5</td><td>1.0</td><td>0.50</td></tr><tr><td>If item is found, prints price</td><td>0.5</td><td>1.0</td><td>0.50</td></tr><tr><td>Prints the most expensive item if more than one item is found</td><td>4.0</td><td>1.0</td><td>4.00</td></tr><tr><td>Does not print damaged items</td><td>2.5</td><td>1.0</td><td>2.50</td></tr><tr><td>Does not print items that are past due service date</td><td>2.5</td><td>1.0</td><td>2.50</td></tr><tr><td>Prints a 'suggested' item</td><td>4.0</td><td>1.0</td><td>4.00</td></tr><tr><td>Suggested item is the same type but from another manufacturer</td><td>2.0</td><td>1.0</td><td>2.00</td></tr><tr><td>Suggested item is not damaged</td><td>2.0</td><td>1.0</td><td>2.00</td></tr><tr><td>Suggested item is not past due service date</td><td>2.0</td><td>1.0</td><td>2.00</td></tr><tr><td>Suggested item is the one that is closest to price of the query item</td><td>2.0</td><td>1.0</td><td>2.00</td></tr><tr><td>Reads input file ManufacturerList.txt</td><td>3.0</td><td>0.0</td><td>0.00</td></tr><tr><td>Reads input file PriceList.txt</td><td>3.0</td><td>0.0</td><td>0.00</td></tr><tr><td>Reads input file ServiceDatesList.txt</td><td>3.0</td><td>0.0</td><td>0.00</td></tr><tr><td>Uses dynamically populated item types in database</td><td>10.0</td><td>1.0</td><td>10.00</td></tr><tr><td>FullInventory file generated</td><td>1.0</td><td>0.0</td><td>0.00</td></tr><tr><td>FullInventory sorted alphabetically by manufacturer</td><td>0.25</td><td>0.0</td><td>0.00</td></tr><tr><td>Item Type files generated dynamically for each item type present in the input files (not hardcoded types)</td><td>0.25</td><td>0.0</td><td>0.00</td></tr><tr><td>Item Type files contain the item type in the filename</td><td>0.25</td><td>0.0</td><td>0.00</td></tr><tr><td>Item Type files sorted by item ID</td><td>0.25</td><td>0.0</td><td>0.00</td></tr><tr><td>PastServiceDateInventory file generated</td><td>1.0</td><td>0.0</td><td>0.00</td></tr><tr><td>PastServiceDateInventory correctly identifies items</td><td>0.25</td><td>0.0</td><td>0.00</td></tr><tr><td>PastServiceDateInventory sorted by oldest to most recent service date</td><td>0.25</td><td>0.0</td><td>0.00</td></tr><tr><td>DamagedInventory file generated</td><td>1.0</td><td>0.0</td><td>0.00</td></tr><tr><td>DamagedInventory correctly identifies items</td><td>0.25</td><td>0.0</td><td>0.00</td></tr><tr><td>DamagedInventory sorted by price, from highest to lowest</td><td>0.25</td><td>0.0</td><td>0.00</td></tr><tr><td>Implement a Python class that represents an inventory</td><td>15.0</td><td>1.0</td><td>15.00</td></tr><tr><td>Uses datetime correctly</td><td>2.0</td><td>1.0</td><td>2.00</td></tr><tr><td>Does not use a library to read input files such as Pandas</td><td>5.0</td><td>1.0</td><td>5.00</td></tr>
+        <tr><td colspan="3"><strong>Total</strong></td><td><strong>82.00</strong></td></tr>
+    </table>
+</body>
+</html>
